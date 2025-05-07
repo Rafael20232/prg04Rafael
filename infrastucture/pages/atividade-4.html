@@ -1,31 +1,58 @@
+<!-- Declaração do tipo de documento HTML5 -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Define o idioma principal da página como português do Brasil -->
     <head>
+        <!-- Define a codificação de caracteres como UTF-8, garantindo o suporte a acentuação -->
         <meta charset="utf-8">
+
+        <!-- Torna a página responsiva em diferentes tamanhos de tela -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Define o título que aparece na aba do navegador -->
         <title>Mob Psycho 100</title>
 
+        <!-- Ícone que aparece na aba do navegador (favicon) -->
         <link rel="shortcut icon" href="../assets/images/Reigen_1.ico" type="image/x-icon">
+
+        <!-- Importa uma folha de estilo CSS externa -->
         <link rel="stylesheet" href="../assets/css/global/styles.css">
     </head>
     <body>
+        <!-- Título principal da seção de áudios e vídeos -->
         <h1>Audios e Videos do Reigen:</h1>
+
+        <!-- Subtítulo descritivo -->
         <h3>"Tadinho do meu covas..."</h3>
+
+        <!-- Bloco <picture> para imagem responsiva -->
         <picture>
+            <!-- Define uma imagem alternativa para telas pequenas -->
             <source media="(max-width: 500px)" srcset="Reigen1.png" type="image/png">
+            <!-- Imagem padrão caso a condição acima não seja satisfeita -->
             <img src="../assets/images/covinhastil.PNG" alt="A imagem flexivel funciona"> 
         </picture>
-        <br>
+
+        <br> <!-- Quebra de linha -->
+
+        <!-- Elemento de áudio com controles de reprodução -->
         <audio preload="auto" controls>
+            <!-- Fonte do áudio em formato MP3 -->
             <source src="../assets/audios/Muitofraquinhokkjjk.mp3" type="audio/mp3">
+            <!-- Mensagem exibida caso o navegador não suporte o elemento -->
             <p> Seu navegador não suporta audio!</p>
         </audio>
-        <br>
+
+        <br> <!-- Outra quebra de linha -->
+
+        <!-- Título de uma nova seção -->
         <h1>Mob é uma otima pessoa, ce loco:</h1>
+
+        <!-- Elemento de vídeo com largura fixa, imagem de capa (poster) e controles -->
         <video 
             width="600" poster="../assets/images/reigenrealizado.PNG" controls>
+            <!-- Fonte do vídeo em MP4 -->
             <source src="../assets/videos/Boapessoa.mp4" type="video/mp4">
+            <!-- Mensagem alternativa caso o vídeo não possa ser carregado -->
             <p>Seu navegador não suporta carregar o video</p>
         </video>
     </body>

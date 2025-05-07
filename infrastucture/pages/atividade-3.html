@@ -1,30 +1,46 @@
+<!-- Declara que o documento é do tipo HTML5 -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
 <head>
-
+    <!-- Define o conjunto de caracteres como UTF-8 (suporta acentuação e caracteres especiais) -->
     <meta charset="UTF-8">
 
+    <!-- Configura a visualização para dispositivos móveis (layout responsivo) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Define o título da aba do navegador -->
     <title>Mob Psycho 100</title>
 
+    <!-- Define o ícone da aba (favicon) -->
     <link rel="shortcut icon" href="../assets/images/Reigen_1.ico" type="image/x-icon">
+
+    <!-- Link para o arquivo CSS externo que define os estilos globais da página -->
     <link rel="stylesheet" href="../assets/css/global/styles.css">
 </head>
 <body>
+    <!-- Título principal da página -->
     <h1>
         Ola nova pagina!
     </h1>
+
+    <!-- Subtítulo para a seção de imagens -->
     <h2>
         imagens do Reigen:
     </h2>
+
+    <!-- Lista não ordenada contendo as imagens -->
     <ul>
         <li> 
+            <!-- Elemento <picture> permite usar diferentes imagens dependendo da largura da tela -->
             <picture>
+                <!-- Imagem para telas com no máximo 500px de largura -->
                 <source media="(max-width: 500px)" srcset="Reigen1.png" type="image/png">
+                <!-- Imagem padrão a ser exibida caso o <source> acima não seja aplicado -->
                 <img src="../assets/images/Reigen1_resized.png" alt="A imagem flexivel funciona"> 
             </picture>
         </li>
+
+        <!-- Os próximos <li> estão incorretamente estruturados: o <source> deve estar dentro de um <picture> -->
         <li>
             <source media="(max-width: 500px)" srcset="Reigen2.png" type="image/png">
             <img src="../assets/images/Reigen2_resized.png" alt="A imagem flexivel funciona"> 

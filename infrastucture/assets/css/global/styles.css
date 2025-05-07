@@ -1,11 +1,12 @@
+/* Aplica estilos ao elemento <body> de toda a página */
 body {
-    background-color: rgb(159, 199, 102);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(159, 199, 102); /* Define a cor de fundo da página com um tom esverdeado */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte usada no texto da página, com fallback para fontes similares */
 }
 
+/* Aplica estilos a todos os elementos <h1> (títulos principais) */
 h1 {
-    color: rgb(23, 71, 167);
-    text-align:left;
-    margin-left: 80px;
+    color: rgb(23, 71, 167); /* Define a cor do texto do título como um tom de azul */
+    text-align: left; /* Alinha o texto do título à esquerda (padrão, mas explicitamente definido) */
+    margin-left: 80px; /* Adiciona um espaçamento de 80 pixels à esquerda do título */
 }
-
