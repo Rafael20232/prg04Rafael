@@ -1,12 +1,52 @@
+/* Importa duas fontes do Google Fonts: Anton e Bungee */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&display=swap');
+
 /* Aplica estilos ao elemento <body> de toda a página */
 body {
-    background-color: rgb(159, 199, 102); /* Define a cor de fundo da página com um tom esverdeado */
-    font-family: Arial, Helvetica, sans-serif; /* Define a fonte usada no texto da página, com fallback para fontes similares */
+    background-color: #0F0F2D; /* Cor de fundo escura (azul petróleo) */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão para o corpo do texto */
+    
+    /* Define uma imagem de fundo com caminho relativo e espaços escapados */
+    background-image: url("../../images/Mob\ Psycho\ 100\ Background\ 01.jpg");
+    
+    background-position: center; /* Centraliza a imagem de fundo */
 }
 
-/* Aplica estilos a todos os elementos <h1> (títulos principais) */
+/* Classe utilizada para textos com cor azul e fonte personalizada */
+.cores {
+    font-family: "Anton", sans-serif; /* Usa a fonte Anton */
+    font-size: 14px; /* Define o tamanho da fonte */
+    color: #00E5E0; /* Azul claro */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Classe para textos descritivos com fonte personalizada e cor lilás */
+.descricao {
+    font-family: "Anton", sans-serif; /* Usa a fonte Anton */
+    font-size: 18px; /* Tamanho maior que .cores */
+    color: #4a3b5c; /* Cor lilás escura */
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+/* Estilos para um painel centralizado na página */
+.panel {
+    background-color: #0F0F2D; /* Mesma cor de fundo do body */
+    max-width: 800px; /* Largura máxima do painel */
+    margin: 80px auto; /* Margem superior/inferior de 80px e centralização horizontal */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 0 50px; /* Sombra difusa ao redor do painel */
+}
+
+/* Estiliza todos os títulos <h1> da página */
 h1 {
-    color: rgb(23, 71, 167); /* Define a cor do texto do título como um tom de azul */
-    text-align: left; /* Alinha o texto do título à esquerda (padrão, mas explicitamente definido) */
-    margin-left: 80px; /* Adiciona um espaçamento de 80 pixels à esquerda do título */
+    font-family: "Anton", sans-serif; /* Fonte Anton para destaque */
+    font-size: 80px; /* Tamanho grande para o título */
+    color: #00E5E0; /* Azul claro */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza todos os links <a> */
+a {
+    color: #F4F4F9; /* Cor branca suave */
 }
