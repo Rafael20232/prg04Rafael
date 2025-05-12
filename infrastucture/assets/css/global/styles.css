@@ -5,11 +5,6 @@
 body {
     background-color: #0F0F2D; /* Cor de fundo escura (azul petróleo) */
     font-family: Arial, Helvetica, sans-serif; /* Fonte padrão para o corpo do texto */
-    
-    /* Define uma imagem de fundo com caminho relativo e espaços escapados */
-    background-image: url("../../images/Mob\ Psycho\ 100\ Background\ 01.jpg");
-    
-    background-position: center; /* Centraliza a imagem de fundo */
 }
 
 /* Classe utilizada para textos com cor azul e fonte personalizada */
@@ -46,7 +41,38 @@ h1 {
     text-align: center; /* Centraliza o texto */
 }
 
+h2 {
+    color: #FF2052;
+}
+
 /* Estiliza todos os links <a> */
-a {
+nav {
+    text-align: center;
+}
+
+a{
+    padding: 10px;
     color: #F4F4F9; /* Cor branca suave */
+}
+
+article{
+
+    background-color: #F4F4F9; /* Mesma cor de fundo do body */
+    max-width: 500px; /* Largura máxima do painel */
+    margin: 80px auto; /* Margem superior/inferior de 80px e centralização horizontal */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 0 50px; /* Sombra difusa ao redor do painel */
+}
+
+p{
+    color: #1E1E1E;
+}
+
+footer{
+    font-family: "Anton", sans-serif; /* Fonte Anton para destaque */
+    font-size: 12px; /* Tamanho grande para o título */
+    font-weight: 200px;
+    color: #00E5E0; /* Azul claro */
+    text-align: center; /* Centraliza o texto */
 }

@@ -2,49 +2,95 @@
 <!DOCTYPE html>
 <html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
     <head>
-        <!-- Define a codificação de caracteres como UTF-8 (suporta acentuação) -->
+        <!-- Define a codificação de caracteres como UTF-8 (suporta acentuação e caracteres especiais) -->
         <meta charset="utf-8">
         
-        <!-- Torna a página responsiva, adaptando-a a diferentes larguras de tela -->
+        <!-- Torna a página responsiva para diferentes dispositivos -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Define o título da aba do navegador -->
+        <!-- Título que será exibido na aba do navegador -->
         <title>Mob Psycho 100</title>
         
-        <!-- Define o ícone (favicon) da aba do navegador -->
+        <!-- Ícone exibido na aba do navegador -->
         <link rel="shortcut icon" href="../assets/images/covinhas-icon.ico" type="image/x-icon">
         
-        <!-- Importa uma folha de estilos externa para aplicar estilos à página -->
+        <!-- Importa o arquivo CSS externo para estilização da página -->
         <link rel="stylesheet" href="../assets/css/global/styles.css">
     </head>
     <body>
-        <!-- Título principal da página com a classe CSS "titulo" -->
-        <h1 class="titulo">Mob Psycho 100</h1>
-        
-        <!-- Link para outra página com imagens, abre em nova aba -->
-        <a  
-            target="_blank" 
-            href="atividade-3.html" 
-            hreflang="pt-br"> <!-- Indica que o idioma do conteúdo vinculado é português do Brasil -->
-            Imagens do Reigen
-        </a>
-        <br> <!-- Quebra de linha -->
+        <!-- Cabeçalho da página contendo o título e a navegação -->
+        <header>
+            <!-- Título principal com classe para estilização -->
+            <h1 class="titulo">Mob Psycho 100</h1>
 
-        <!-- Outro link, agora para áudios e vídeos, também abre em nova aba -->
-        <a  
-            target="_blank"
-            href="atividade-4.html"
-            hreflang="pt-br">
-            Audios e videos do Reigen
-        </a>
-        <br> <!-- Quebra de linha -->
+            <!-- Barra de navegação com links para outras páginas -->
+            <nav>
+                <!-- Link que abre em nova aba, com idioma especificado -->
+                <a target="_blank" href="atividade-3.html" hreflang="pt-br">
+                    Imagens do Reigen
+                </a>
 
-        <!-- Outro link, agora para áudios e vídeos, também abre em nova aba -->
-        <a  
-            target="_blank"
-            href="atividade-5.html"
-            hreflang="pt-br">
-            cores do projeto
-        </a>
+                <!-- Segundo link para outra página, também em nova aba -->
+                <a target="_blank" href="atividade-4.html" hreflang="pt-br">
+                    Áudios e vídeos do Reigen
+                </a>
+
+                <!-- Terceiro link para outra página, mesmo comportamento -->
+                <a target="_blank" href="atividade-5.html" hreflang="pt-br">
+                    Cores do projeto
+                </a>
+            </nav>
+        </header>
+
+        <!-- Conteúdo principal da página -->
+        <main>
+            <section>
+                <article>
+                    <!-- Exibe imagem adaptável à largura da tela usando <picture> -->
+                    <picture>
+                        <!-- Mostra esta imagem se a tela tiver no máximo 500px -->
+                        <source media="(max-width: 500px)" srcset="Reigen1.png" type="image/png">
+                        <!-- Imagem padrão para outras resoluções -->
+                        <img src="../assets/images/Mob.png" alt="A imagem flexível funciona">
+                    </picture>
+
+                    <!-- Conteúdo complementar com informações sobre o anime -->
+                    <aside>
+                        <h2>SOBRE O ANIME</h2>
+                        <p>
+                            Mob Psycho 100 segue a história de Shigeo Kageyama, apelidado de "Mob", 
+                            um jovem com habilidades psíquicas extraordinárias. Embora ele possua 
+                            poderes incríveis, Mob tenta viver uma vida normal e controlar suas emoções 
+                            para evitar que seus poderes saiam do controle.
+                        </p>
+                    </aside>
+                </article>
+            </section>
+        </main>
+
+        <!-- Segundo elemento <main> com o rodapé, o que não é semanticamente correto -->
+        <main>
+            <!-- Rodapé com informações e links de créditos -->
+            <footer>
+                <!-- <pre> preserva espaços e quebras de linha como estão escritos -->
+                <pre>
+-------------------------------------------------------------
+Mob Psycho 100 Fan Site  |  Um site feito por fãs, para fãs 💥
+
+Links:
+[Início] [Personagens] [Temporadas] [Galeria] [Curiosidades]
+
+Siga-nos:
+[Instagram] [Twitter] [GitHub]
+
+Créditos:
+Imagens e personagens © ONE / Bones Inc.
+Projeto fan-made sem fins lucrativos.
+
+“Se você chegou até aqui... cuidado, o Mob está em 98%.”
+-------------------------------------------------------------
+                </pre>
+            </footer>
+        </main>
     </body>
 </html>
