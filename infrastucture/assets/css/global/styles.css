@@ -46,8 +46,37 @@ h2 {
 }
 
 /* Estiliza todos os links <a> */
-nav {
+nav#menu{
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
     text-align: center;
+    margin: -67px;
+    margin-right: -25px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #00FF88;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    border-radius: 15px;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu li:hover{
+    background-color: #4A00E0;
+}
+
+nav#menu a{
+    color: #1E1E1E;
+    text-decoration: none;
 }
 
 a{
@@ -56,13 +85,23 @@ a{
 }
 
 article{
-
+    display: flex;
     background-color: #F4F4F9; /* Mesma cor de fundo do body */
     max-width: 500px; /* Largura máxima do painel */
     margin: 80px auto; /* Margem superior/inferior de 80px e centralização horizontal */
     padding: 40px; /* Espaçamento interno */
     border-radius: 15px; /* Cantos arredondados */
     box-shadow: 0 0 50px; /* Sombra difusa ao redor do painel */
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaço entre imagem e texto */
+    max-width: 800px;
+}
+
+.imagem {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 p{
@@ -75,4 +114,9 @@ footer{
     font-weight: 200px;
     color: #00E5E0; /* Azul claro */
     text-align: center; /* Centraliza o texto */
+}
+
+source{
+    max-width: 800px;
+    min-width: 400px;
 }
