@@ -120,3 +120,97 @@ source{
     max-width: 800px;
     min-width: 400px;
 }
+
+/*Formulario:*/
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button,
+input[type="reset"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.1);
+}
+
+button,
+input[type="reset"] {
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: #6c757d;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="reset"]:hover {
+  background-color: #5a6268;
+}
+
+/*Lista de Cadastros:*/
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #1976d2;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f0f8ff;
+}
+
+/* Botões */
+.btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-editar:hover {
+    background-color: #e3f2fd;
+}
+
+.btn-exlcuir:hover {
+    background-color: #ffebee;
+}
+
+/* Ícones */
+.btn img {
+    width: 20px;
+    height: 20px;
+}

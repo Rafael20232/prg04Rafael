@@ -1,0 +1,93 @@
+<!-- Declara o tipo do documento como HTML5 -->
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+    <head>
+        <!-- Define a codificação de caracteres como UTF-8 (suporta acentuação e caracteres especiais) -->
+        <meta charset="utf-8">
+        
+        <!-- Torna a página responsiva para diferentes dispositivos -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Título que será exibido na aba do navegador -->
+        <title>Mob Psycho 100</title>
+        
+        <!-- Ícone exibido na aba do navegador -->
+        <link rel="shortcut icon" href="../assets/images/covinhas-icon.ico" type="image/x-icon">
+        
+        <!-- Importa o arquivo CSS externo para estilização da página -->
+        <link rel="stylesheet" href="../assets/css/global/styles.css">
+
+        <link rel="stylesheet" href="estilos.css">
+
+    </head>
+<body>
+    <table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Editar</th>
+            <th>exlcuir</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Nome">Judas Pedro</td>
+            <td data-label="Email">judas@gmail.com</td>
+            <td>
+            <button class="btn btn-editar" onclick="editar(1)">
+                <img src="../assets/images/botao-editar.png" alt="editar">
+            </button>
+            </td>
+            <td>
+            <button class="btn btn-exlcuir" onclick="excluir(1)">
+                <img src="../assets/images/lixeira.png" alt="excluir">
+            </button>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Nome">Isack Moises</td>
+            <td data-label="Email">Isack@gmail.com</td>
+            <td>
+            <button class="btn btn-editar" onclick="editar(1)">
+                <img src="../assets/images/botao-editar.png" alt="editar">
+            </button>
+            </td>
+            <td>
+            <button class="btn btn-exlcuir" onclick="excluir(1)">
+                <img src="../assets/images/lixeira.png" alt="excluir">
+            </button>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Nome">Santista Drumon</td>
+            <td data-label="Email">Drumon@gmail.com</td>
+             <td>
+            <button class="btn btn-editar" onclick="editar(1)">
+                <img src="../assets/images/botao-editar.png" alt="editar">
+            </button>
+            </td>
+            <td>
+            <button class="btn btn-exlcuir" onclick="excluir(1)">
+                <img src="../assets/images/lixeira.png" alt="excluir">
+            </button>
+            </td>
+        </tr>
+        <tr>
+            <td data-label="Nome">Isack Netero</td>
+            <td data-label="Email">Netero@gmail.com</td>
+             <td>
+            <button class="btn btn-editar" onclick="editar(1)">
+                <img src="../assets/images/botao-editar.png" alt="editar">
+            </button>
+            </td>
+            <td>
+            <button class="btn btn-exlcuir" onclick="excluir(1)">
+                <img src="../assets/images/lixeira.png" alt="excluir">
+            </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

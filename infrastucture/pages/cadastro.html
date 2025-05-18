@@ -1,0 +1,42 @@
+<!-- Declara o tipo do documento como HTML5 -->
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+    <head>
+        <!-- Define a codificação de caracteres como UTF-8 (suporta acentuação e caracteres especiais) -->
+        <meta charset="utf-8">
+        
+        <!-- Torna a página responsiva para diferentes dispositivos -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Título que será exibido na aba do navegador -->
+        <title>Mob Psycho 100</title>
+        
+        <!-- Ícone exibido na aba do navegador -->
+        <link rel="shortcut icon" href="../assets/images/covinhas-icon.ico" type="image/x-icon">
+        
+        <!-- Importa o arquivo CSS externo para estilização da página -->
+        <link rel="stylesheet" href="../assets/css/global/styles.css">
+    </head>
+<body>
+     <form method="post">
+        <h1>Formulário de Cadastro</h1>
+
+        <label for="Nome">Nome </label>
+        <input id="nome" type="text" name="nome" required placeholder="Digite seu nome">
+        <br>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required placeholder="Digite seu email">
+        <br>
+
+        <label for="senha">senha </label>
+        <input id="senha" type="password" name="senha" required placeholder="Digite sua senha" pattern=".{8,}" title="A senha deve ter no minimo 8 digitos">
+
+        <br>
+        <button type="submit"><a href="lista-usuarios.html">Enviar</a></button>
+
+        <br>
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
